@@ -1,0 +1,224 @@
+/*
+El código es secuencial, por ejemplo si hay un <p> que tenga ambas clases
+el atributo que se le asignará será el último que se escribió, porque fue la
+última instrucción que se ejecutó, con al excepción de "*"
+*/
+
+/* Seleccionar por id */
+#titulo { 
+    color: tomato;
+}
+
+/* Seleccionar por clase */
+p.texto {  /* A todas las etiquetas de <p> que tengan la clase texto */
+    color:blue;
+}
+
+p.especial {
+    color: green;
+}
+
+/* En todas etiquetas de div que contengan hijos de etiquetas p */
+div p {
+    color: aquamarine;
+}
+
+div h2, div h3 {
+    color: brown;
+} 
+
+/* Solo cambia a los que no han sido afectados anteriormente */
+*{
+    font-size: 24px;
+    /* color: black; */
+}
+
+/* Hexagecimal
+.color {
+    color: #00f000
+}
+*/
+
+/* RGB
+.color {
+    color: rgb(0, 0, 255)
+} */
+
+.color {
+    /* border: 5px black solid */
+    /* 
+        dotted
+        dashed
+        solid
+        double
+        groove
+        ridge
+        inset
+        outset
+        none
+        hidden
+    */
+    border-style: solid;
+    border-color: red;
+    border-radius: 5px;
+    border-width: 1rem;
+    /* 
+        rem
+        em
+        px
+        cm
+        mm
+        in
+        pt
+        pc
+    */
+}
+
+#fondo {
+    /* background-color: rgba(0,0,0,0.3); */
+    background-color: rgba(255,0,0);
+    /* opacity: 0.3;  ¨Le da opacidad al elemento completo y no solo al fondo */
+    height: 544px;
+    background-image: url("img/TheBlackParade.png");
+    /* background-size: cover; auto, contain*/
+    background-size: 144px 144px;
+    /* background-repeat: repeat-y; */
+    background-repeat: no-repeat;
+    background-position: center center; /*Top, center y bottom*/
+
+    background: #f00 url(img/TheBlackParade.png) repeat-y right bottom / 100px 100px;
+    
+}
+
+.margen {
+    background-color: blueviolet;
+    /* margin: 10px 20px 15px 5px; top, right, bottom and left */
+    /* margin: 10px 20px; horizontal y vertical */
+    /* margin: 10px 20px 5px; top, horizontal y bottom */
+    margin: 10px;   /* Fuera del elemento */
+    padding: 20px;  /* Dentro del elemento */
+    border: solid 1px black;
+    height: 200px;
+    width: 50px;
+    overflow: hidden;   /* Que hacer con el contenido excedente. visible, hidden, scroll */
+    outline: red solid 1px; /* Por encima del borde */
+}
+
+.text{
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+    text-decoration: underline;
+    text-shadow: 3px 5px 5px blue; /*right, bottom and blur*/
+    
+}
+
+/* Cada link debe seguir este orden lógico, si quiero poner
+un color para hover, tengo que borrar o establecer primero link y visited, no despues */
+
+/* Cuando no ha sido visitados */
+a:link {
+    color: red
+}
+
+a:visited {
+    color: green
+}
+
+a:hover {
+    color: gray
+}
+
+a:active {
+    color: lightblue
+}
+
+ul {
+    background-color: cyan;
+    list-style-type: square;
+    padding-left: 2;
+    
+    /* list-style-position: inside; */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;  /*Quitar espacio entre bordes*/
+}
+
+th, td {
+    border: solid 1px #000000;
+    padding: 5px
+}
+
+th {
+    background-color: rgb(12, 29, 255);
+    color: white;
+    text-align: left;
+}
+
+/*odd and even
+Sirve para hacer filas pares o impares de cierto color
+lo mismo que separación de filas por color de celdas en Excel*/
+tr:nth-child(even) {
+    background-color: #4d4242;
+}
+
+/* x:hover = cuando el mouse está sobre x*/
+tr:hover {
+    background-color: aquamarine;
+    cursor: pointer; /*Cambiar el icono del cursor*/
+}
+
+span {
+    display: block;
+    /* display: none; */
+    /* visibility: hidden; */
+    max-width: 300px;
+    background-color: #f00;
+}
+
+.inline {
+    display: inline;
+}
+
+#position {
+    position: sticky; /*fixed, absolute, relative, static, sticky*/
+    left: 20px;
+    top: 25px;
+}
+
+.left {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+.right {
+    float: right;
+    width: 100px;
+}
+
+.container {
+    height: 200px;
+}
+
+.column {
+    border: solid 0px #ddd;
+    border-radius: 5px;
+    margin: 0;
+    padding: 10px 0;
+    width: 33.3%;
+}
+
+.inline-block {
+    display: inline-block;
+    height: 55px;
+    background-color: red;
+}
+
+.center {
+    padding: 50px 0;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aquamarine;
+}

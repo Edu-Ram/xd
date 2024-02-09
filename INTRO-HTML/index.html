@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi primera web</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 500px;">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            
+            <tr>
+                <td>Headsets</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td>Mouse</td>
+                <td>20000</td>
+            </tr>
+            <tr>
+                <td>Wireless Keyboard</td>
+                <td>35000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total: 65000</td>
+        </tfoot>
+    </table>
+    <!-- <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercer heading</h3>
+    <h4>Mi cuarto heading</h4>
+    <h5>Mi quinto heading</h5>
+    <h6>Chanchito feliz</h6> -->
+    <!--Llega hasta H6, no existen headers mayores a 6 -->
+
+    <p>El chanchito está muy feliz</p>
+    <p>Se, mucho</p>
+
+    <hr> <!--Separación mediante una línea horizontal -->
+
+
+    <h2>Chanchito felipe</h2>
+    <p>
+        Lorem ipsum <span style = "color: rgb(255, 0, 153)">dolor</span>
+        sit amet, consectetur adipiscing elit. <br> <!-- Salto de linea, como \n-->
+        Etiam ante nunc, volutpat sed nisi efficitur, rhoncussodales mauris.
+    </p>
+
+    <hr>
+
+    <a href = "https://www.google.com">Ir a google</a> <!-- Etiqueta de hipervínculo-->
+    <br>
+    <a target = "_blank" href = "https://www.google.com">Ir a google</a> <!-- Abre una nueva pestaña-->
+
+    <!-- <hr>
+
+    <img src="img/TheBlackParade.png" height="300" width="400"/> -->
+    <!-- Cerrar directamente una etiqueta : "<etiqueta />" != <etiqueta> </etiqueta> -->
+    <hr>
+
+    <form action="/formulario" method="POST">
+        <label for="nombre">Nombre</label> <!-- "for" funciona como un "set focus"-->
+        <input value="Chanchito" type="text"  id="nombre" name="nombre" placeholder="Chanchito feliz"/>
+        <!--
+            submit = botón
+            text = textbox
+            password = oculta lo que se escribe
+            email = _
+            radio = radiobutton
+            checkbox = _
+            file = choose file
+        -->
+        <br>
+        <label for="apellido">Apellido</label> <!-- "for" funciona como un "set focus"-->
+        <input value="Feliz" type="text"  id="apellido" name="apellido" placeholder="Chanchito triste"/>
+        <br>
+        <label for="comentario">Comentario</label>
+        <textarea  cols="50" rows="10" id="comentario" placeholder="Ingrese comentario" name="comentario">Comentario por defecto</textarea>
+        <br>
+        <!-- <input type="submit"/> #Botón de enviar, no personalizable--> 
+        <button type="button"><img src="img/TheBlackParade.png" width="60"></button>
+        <!-- types: button, reset and submit -->
+
+
+        <!-- Lista no ordenada-->
+        <ul>
+            <li>Elemento1</li>
+            <li>Elemento2</li>
+            <li>Elemento3</li>
+            <li>Elemento4</li>
+        </ul>
+        
+        <!-- Lista ordenada-->
+        <ol>
+            <li value="50">Elemento1</li>
+            <li>Elemento2</li>
+            <li>Elemento3</li>
+            <li>Elemento4</li>
+            <li>
+                Elemento5
+                <ol>
+                    <li style="list-style-type: lower-alpha;">SubElemento1</li>
+                    <li style="list-style-type: lower-alpha;">SubElemento2</li>
+                    <li style="list-style-type: lower-alpha;">SubElemento3</li>
+                </ol>
+            </li>
+        </ol>
+    
+    </form>
+
+</body>
+</html>
